@@ -1,4 +1,4 @@
-package twoPointers.q16;
+package twopointers;
 
 import java.util.Arrays;
 
@@ -24,7 +24,7 @@ import java.util.Arrays;
  * -10^3 <= nums[i] <= 10^3
  * -10^4 <= target <= 10^4
  */
-public class Solution {
+class ThreeSumClosest {
     public int threeSumClosest(int[] nums, int target) {
         int n = nums.length;
         int diff = Integer.MAX_VALUE;
