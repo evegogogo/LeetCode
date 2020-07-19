@@ -37,6 +37,10 @@ If we sort the array of array by the value of the first element and then the sec
 ## Code
 
 ```java
+# Source : https://leetcode.com/problems/merge-intervals/
+# Author: Eve
+# Date: 2020-07-18
+
 class Solution {
     public int[][] merge(int[][] intervals) {
         if (intervals == null || intervals.length <= 1) {
