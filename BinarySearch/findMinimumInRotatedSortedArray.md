@@ -28,7 +28,7 @@ Output: 0
 
 Find the first number that is smaller than the previous one.
 
-![153](C:\Users\shenm\Desktop\CS\Leetcode\153.png)
+![153](https://github.com/evegogogo/LeetCode/blob/master/images/153.png)
 
 ## Highlights
 
