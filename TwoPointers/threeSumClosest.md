@@ -35,9 +35,9 @@ We can fix 1 element and use 2 pointers within the range between the element to 
 ## Code
 
 ```java
-# Source: https://leetcode.com/problems/3sum-closest/solution/
-# Author: Eve
-# Date: 2020-7-17
+// Source: https://leetcode.com/problems/3sum-closest/solution/
+// Author: Eve
+// Date: 2020-7-17
     
 class Solution {
     public int threeSumClosest(int[] nums, int target) {

@@ -1,0 +1,86 @@
+# 33.Search in Rotated Sorted Array
+
+## Question
+
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+
+(i.e., `[0,1,2,4,5,6,7]` might become `[4,5,6,7,0,1,2]`).
+
+You are given a target value to search. If found in the array return its index, otherwise return `-1`.
+
+You may assume no duplicate exists in the array.
+
+Your algorithm's runtime complexity must be in the order of *O*(log *n*).
+
+**Example 1:**
+
+```
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+```
+
+**Example 2:**
+
+```
+Input: nums = [4,5,6,7,0,1,2], target = 3
+Output: -1
+```
+
+## Ideas
+
+Based on 153, at first find out the index of the smallest element. Then check out which part the target is in and determine the start and end. The just use Binary Search.
+
+## Highlights
+
+**Binary Search: start <= end**
+
+**Can use one-pass Binary Search, see 81**
+
+## Code
+
+```java
+// Source : https://leetcode.com/problems/search-in-rotated-sorted-array/
+// Author: Eve
+// Date: 2020-07-19
+
+class Solution {
+    public int search(int[] nums, int target) {
+        int n = nums.length;
+        if (nums == null || n == 0) {
+            return -1;
+        }
+        int start = 0;
+        int end = n - 1;
+        int smallest = 0;
+        while (start < end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] > nums[end]) {
+                start = mid + 1;
+            } else {
+                end = mid;
+            }
+        }
+        smallest = start;
+        
+        start = 0;
+        end = n - 1;
+        if (target <= nums[end]) {
+            start = smallest;
+        } else {
+            end = smallest - 1;
+        }
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] > target) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+        }
+        return -1;
+    }
+}
+```
+
