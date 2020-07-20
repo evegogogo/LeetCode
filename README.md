@@ -4,10 +4,10 @@
 
 | Time Complexity | Algorithms                               |
 | --------------- | ---------------------------------------- |
-| O(log n)        | Binary Search                            |
+| O(log(n))       | Binary Search                            |
 | O(sqrt n)       | Prime Factorization                      |
 | O(n)            | High Frequency                           |
-| O(n log n)      | Sorting                                  |
+| O(nlog(n)       | Sorting                                  |
 | O(n^2)          | Matrix, Enumeration, Dynamic Programming |
 | O(n^3)          | Matrix, Enumeration, Dynamic Programming |
 | O(2^n)          | Combination                              |
