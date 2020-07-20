@@ -26,7 +26,7 @@ Output: false
 
 Similar to 33. One difference: there're duplicates, so we need to remove duplicates. 
 
-![](C:\Users\shenm\Desktop\CS\Leetcode\images\81.png)
+![81](https://github.com/evegogogo/LeetCode/blob/master/images/81.png)
 
 ## Highlights
 

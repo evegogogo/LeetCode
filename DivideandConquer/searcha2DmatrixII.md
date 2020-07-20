@@ -29,11 +29,11 @@ Given target = `20`, return `false`.
 
 Intuition: Divide and Conquer. Compare the element in the center of the matrix with the target.  Every time, we can cut 1 submatrix.
 
-![](C:\Users\shenm\Desktop\CS\Leetcode\images\240.png)
+![240](https://github.com/evegogogo/LeetCode/blob/master/images/240.png)
 
 Improved: Smart Method! Start searching from top right. If the target is less than the current value, then it won't be in the current column. If the target is greater than the current value, then it won't be in the current row. 
 
-![240_dc](C:\Users\shenm\Desktop\CS\Leetcode\images\240_dc.jpg)
+![240_dc](https://github.com/evegogogo/LeetCode/blob/master/images/240_dc.jpg)
 
 ## Highlights
 
